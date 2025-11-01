@@ -33,7 +33,7 @@ body {
 .header_container {
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-between;
 }
 
 .navigation {
@@ -78,6 +78,11 @@ body {
     color: #2e2f42 ;
     padding: 24px 0;
     text-decoration: none;
+    display: block;
+}
+
+.contact_info {
+    font-style: normal;
 }
 
 
@@ -126,7 +131,10 @@ body {
     font-size: 56px; 
     line-height: 1.07; 
     color: #ffffff; 
-    letter-spacing: 0.02em; 
+    letter-spacing: 0.02em;
+    margin-right: auto; 
+    margin-left: auto;
+    margin-bottom: 48px;
 }
 
 .cta_button {
@@ -138,6 +146,8 @@ body {
     border-radius: 4px;
     cursor: pointer;
     color: #ffffff;
+    margin-right: auto; 
+    margin-left: auto;
 }
 .cta_button:hover,
 .cta_button:focus {
@@ -209,7 +219,12 @@ body {
 
 .section_title_team {
     margin-bottom: 72px;
-    text-align: center;
+    font-size: 36px;
+    line-height: 1.11; 
+    text-align: center; 
+    letter-spacing: 0.02em; 
+    text-transform: capitalize; 
+    color: #2e2f42; 
 }
 
 .item_title_team{
@@ -242,6 +257,11 @@ body {
 .section_title_foto {
     margin-bottom: 72px;
     text-align: center;
+    font-size: 36px;
+    line-height: 1.11;
+    letter-spacing: 0.02em;
+    text-transform: capitalize;
+    color: #2e2f42 ;
 }
 
 .portfolio_list {
@@ -251,9 +271,6 @@ body {
     row-gap: 48px;
 }
 
-.portfolio_item {
-    text-align: center;
-}
 
 .portfolio_info {
     padding: 32px 16px;
