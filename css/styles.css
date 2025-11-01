@@ -10,6 +10,10 @@ a{
     text-decoration: none;
 }
 
+.img {
+    display: block;
+}
+
 body {
   font-family:"Roboto", sans-serif;
   color: #434455 ;
@@ -76,18 +80,12 @@ body {
 }
 
 
-.contact_info {
+.contact_list {
+    list-style: none;
     display: flex;
     gap: 40px;
 }
 
-.contact_list {
-    list-style: none;
-}
-
-.contact_item {
-    margin: 0;
-}
 
 .contact_link {
     font-weight: 500;
@@ -168,6 +166,7 @@ body {
     line-height: 1.2; 
     letter-spacing: 0.02em; 
     color: #2e2f42;
+    margin-bottom: 8px;
 }
 .item_description_info {
     font-size: 16px; 
@@ -196,14 +195,17 @@ body {
 }
 
 .member_info {
-    padding: 16px 0;
+    padding: 32px 0;
 }
 
 .service_list {
     text-align: center;
+    border-radius: 0px 0px 4px 4px;
 }
 
-
+.section_title_team {
+    margin-bottom: 72px;
+}
 
 .item_title_team{
      font-weight: 500;
@@ -211,6 +213,7 @@ body {
      line-height: 1.2;
      letter-spacing: 0.02em;
      color:#2e2f42 ;
+     margin-bottom: 8px;
 }
 .item_description_team{
      font-size: 16px; 
@@ -231,9 +234,15 @@ body {
     padding: 120px 0;
 }
 
+.section_title_foto {
+    margin-bottom: 72px;
+}
+
 .portfolio_list {
     display: flex;
-    gap: 24px;
+    flex-wrap: wrap;
+    column-gap: 24px;
+    row-gap: 48px;
 }
 
 .portfolio_item {
@@ -241,7 +250,9 @@ body {
 }
 
 .portfolio_info {
-    padding: 16px 0;
+    padding: 32px 16px;
+    border: 1px solid #e7e9fc;
+
 }
 
 .item_title_foto {
@@ -250,6 +261,7 @@ body {
     line-height: 1.2; 
     letter-spacing: 0.02em; 
     color: #2e2f42; 
+    margin-bottom: 8px;
 }
 .item_description_foto {
     font-size: 16px; 
@@ -278,6 +290,8 @@ body {
     text-transform: uppercase; 
     color: #4d5ae5; 
     text-decoration: none;
+    display: inline-block;
+    margin-bottom: 16px; 
 }
 .footer_text {
     color: #f4f4fd; 
@@ -288,6 +302,9 @@ body {
     letter-spacing: 0.02em;
     max-width: 264px;
 }
+
+
+
 
 
 
