@@ -10,23 +10,31 @@ a{
     text-decoration: none;
 }
 
-
-
-
-
 body {
   font-family:"Roboto", sans-serif;
   color: #434455 ;
   background-color: #FFFFFF ;
 }
 
-
 .container {
-  max-width: 1158px;
+  width: 1158px;
   margin: 0 auto;
-  padding: 0 20px;
+  padding: 0 15px;
 }
 
+.header_section {
+    border-bottom: 1px solid #e7e9fc;
+}
+
+.header_container {
+    display: flex;
+    align-items: center;
+}
+
+.navigation {
+    display: flex;
+    align-items: center;
+}
 
 
 
@@ -38,6 +46,8 @@ body {
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: #4d5ae5;
+    margin-right: 76px;
+    text-decoration: none;
 }
 
 .text {
@@ -47,13 +57,12 @@ body {
 
 
 .nav_list {
-    list-style: none;
     display: flex;
-    padding: 0;
+    gap: 40px;
 }
 
 .nav_item {
-margin-left: 20px;
+    list-style: none;
 }
 
 .navi_link {
@@ -62,15 +71,22 @@ margin-left: 20px;
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: #2e2f42 ;
+    padding: 24px 0;
+    text-decoration: none;
 }
 
 
 .contact_info {
-    font-style: normal; 
+    display: flex;
+    gap: 40px;
+}
+
+.contact_list {
+    list-style: none;
 }
 
 .contact_item {
-    margin: 5px 0;
+    margin: 0;
 }
 
 .contact_link {
@@ -79,6 +95,7 @@ margin-left: 20px;
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: #434455;
+    text-decoration: none;
 }
 
 .navi_link:hover,
@@ -102,24 +119,24 @@ margin-left: 20px;
     background-color: #2e2f42; 
     text-align: center; 
     letter-spacing: 0.02em;
+    padding: 188px 0;
 }
 .section_title {
+    max-width: 496px;
     font-size: 56px; 
     line-height: 1.07; 
     color: #ffffff; 
     letter-spacing: 0.02em;
 }
 .cta_button {
-    background-color: #4D5AE5;
-    font-family: "Roboto", sans-serif; 
-    font-weight: 500;
-    font-size: 16px; 
-    line-height: 1.5;
-    letter-spacing: 0.04em;
+    display: block; 
+    min-width: 169px;
+    height: 56px;
     border: none;
-    color: #ffffff; 
-    cursor: pointer; 
-    padding: 10px 20px;   
+    background-color: #4d5ae5;
+    border-radius: 4px;
+    cursor: pointer;
+    color: #ffffff;
 }
 .cta_button:hover,
 .cta_button:focus {
@@ -130,7 +147,18 @@ margin-left: 20px;
 
 
 
+.main_section_info {
+    padding: 120px 0;
+}
 
+.feature_list {
+    display: flex;
+    gap: 24px;
+}
+
+.feature_item {
+    flex: 1;
+}
 
 
 
@@ -159,29 +187,23 @@ margin-left: 20px;
 
 .third_section {
     background-color: #F4F4FD; 
+    padding: 120px 0;
 }
 
-.section_title_team {
-    font-size: 36px;
-    line-height: 1.11; 
-    text-align: center; 
-    letter-spacing: 0.02em; 
-    text-transform: capitalize; 
-    color: #2e2f42; 
+.team_list {
+    display: flex;
+    gap: 24px;
+}
+
+.member_info {
+    padding: 16px 0;
 }
 
 .service_list {
-    list-style: none;
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    padding: 0;
+    text-align: center;
 }
 
-.service_list li {
-    text-align: center;
-    margin: 20px;
-}
+
 
 .item_title_team{
      font-weight: 500;
@@ -205,34 +227,22 @@ margin-left: 20px;
 
 
 
-
-
-.section_title_foto {
-    text-align: center;
-    font-size: 36px;
-    line-height: 1.11;
-    letter-spacing: 0.02em;
-    text-transform: capitalize;
-    color: #2e2f42 ;
-
+.fourth_section {
+    padding: 120px 0;
 }
 
-.fourth_section ul {
-    list-style: none;
+.portfolio_list {
     display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    padding: 0;
+    gap: 24px;
 }
 
-.fourth_section li {
+.portfolio_item {
     text-align: center;
-    margin: 20px;
-    border-bottom: 2px solid #4d5ae5;
 }
 
-
-
+.portfolio_info {
+    padding: 16px 0;
+}
 
 .item_title_foto {
     font-weight: 500; 
@@ -256,6 +266,7 @@ margin-left: 20px;
 
 .footer_section {
     background-color: #2e2f42; 
+    padding: 100px 0;
 }
 
 .logo_footer {
@@ -266,16 +277,32 @@ margin-left: 20px;
     letter-spacing: 0.03em; 
     text-transform: uppercase; 
     color: #4d5ae5; 
+    text-decoration: none;
 }
 .footer_text {
     color: #f4f4fd; 
 }
 .footer_description {
     line-height: 1.5; 
-    color: var(--footer-text-color, #F4F4FD); 
+    color: var(--footer-text-color, #F4F4FD);
     letter-spacing: 0.02em;
+    max-width: 264px;
 }
 
+
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
 
 
 
